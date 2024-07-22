@@ -1,0 +1,15 @@
+{
+    "configurations": [
+        {
+            "name": "Python:test.py",
+            "type": "python",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            // desired program
+            "program": "${workspaceFolder}${pathSeparator}test.py",
+            // desired arguments
+            "args": [],
+            "console": "integratedTerminal",
+        }
+    ]
+}

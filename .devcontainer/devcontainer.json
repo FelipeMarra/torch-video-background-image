@@ -1,0 +1,45 @@
+{
+    "name": "Dockerfile",
+    "context": "..",
+    "dockerFile": "./Dockerfile",
+    "runArgs": [
+        "--rm",
+        // GPU inside the container
+        "--gpus",
+        "all", 
+        // speeds up pytorch data loading
+        "--ipc=host"
+    ],
+    "customizations": {
+        "vscode": {
+        "extensions": [
+            // official docker extension to control docker on the host
+            "ms-azuretools.vscode-docker",
+            // gitlens - helps working in repositories
+            "eamodio.gitlens",
+            // python language support
+            "ms-python.python",
+            "ms-python.vscode-pylance",
+            // jupyter
+            "ms-toolsai.jupyter",
+            "ms-toolsai.vscode-jupyter-cell-tags",
+            "ms-toolsai.jupyter-renderers",
+            "ms-toolsai.vscode-jupyter-slideshow",
+            // autocomplete filenames
+            "christian-kohler.path-intellisense",
+            // displays system usage in the bottom tray
+            "mutantdino.resourcemonitor",
+            // yaml language support
+            "redhat.vscode-yaml",
+            // tab identation
+            "oderwat.indent-rainbow",
+            // icons
+            "PKief.material-icon-theme",
+            // color csv
+            "mechatroner.rainbow-csv",
+            // sonar lint
+            "SonarSource.sonarlint-vscode"
+            ]
+        }
+    }
+}

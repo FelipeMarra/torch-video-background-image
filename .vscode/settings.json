@@ -1,0 +1,19 @@
+{
+    // python env settings
+    "python.defaultInterpreterPath": "/opt/bin/conda/python",
+    "python.terminal.activateEnvironment": true,
+    "python.analysis.typeCheckingMode": "basic",
+    // python formatting
+    "[python]": {
+        "editor.formatOnSave": true,
+        "editor.codeActionsOnSave": {
+        "source.organizeImports": "explicit"
+        },
+    },
+    // default language server
+    "python.languageServer": "Pylance",
+    // editor settings
+    "editor.detectIndentation": false,
+    "editor.insertSpaces": true,
+    "editor.tabSize": 4
+}

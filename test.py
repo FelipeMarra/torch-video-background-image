@@ -3,9 +3,6 @@ import torchvision
 import logging
 from torchaudio.utils import ffmpeg_utils
 
-torch._logging.set_logs(dynamo = logging.DEBUG)
-torch._all.config.verbose = True
-
 print("Library versions:")
 print(ffmpeg_utils.get_versions())
 print("\nBuild config:")

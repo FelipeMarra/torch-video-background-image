@@ -1,6 +1,4 @@
-import torch
 import torchvision
-import logging
 from torchaudio.utils import ffmpeg_utils
 
 print("Library versions:")
